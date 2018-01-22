@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Фотографии пользователей Pink</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -15,7 +16,7 @@
             <a class="navigation__link">Фотографии</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link">Конкурс</a>
+            <a class="navigation__link" href="form.html">Конкурс</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -38,10 +39,10 @@
       </section>
 
       <section class="user-photos">
-        <h2 class="visually-hidden">Фотографии пользователей Pink</h2>
+        <h2 class="visually-hidden">Лучшие снимки пользователей Pink</h2>
         <p class="user-photos__intro-text">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
         <ul class="gallery">
-          <li class="photo gallery__item photo--best-panorama">
+          <li class="gallery__item photo photo--best-panorama">
             <a class="photo__link" href="img/photo1-full.jpg" title="Смотреть фото в полном размере">
               <img class="photo__img photo__img--best-panorama" src="img/photo1.jpg" width="1200" height="506" alt="">
             </a>
@@ -171,8 +172,8 @@
           <div class="photo-filter__crop"></div>
           <div class="photo-filter__saturation"></div>
           <div class="photo-filter__brightness"></div>
-          <button class="post-photo__button button-upload" type="submit">Запостить</button>
-          <button class="post-photo__button button-upload button-upload--cancel" type="reset">Отмена</button>
+          <button class="post-photo__button button button--upload" type="submit">Запостить</button>
+          <button class="post-photo__button button button--cancel" type="reset">Отмена</button>
         </form>
       </section>
     </main>

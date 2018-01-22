@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Конкурс на самое безбашенное путешествие с Pink</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -78,17 +79,17 @@
             </div>
           </fieldset>
 
-          <fieldset class="contest-form__fieldset">
+          <fieldset class="contest-form__fieldset fieldset">
             <div class="contest-form__wrapper">
-              <legend class="contest-form__legend">Контактная информация</legend>
-              <ul class="contest-form__group">
-                <li class="contest-form__field contest-form__field--tel">
-                  <input class="contest-form__input contest-form__input--tel" type="tel" id="tel" name="user-tel" placeholder="Номер, пожалуйста">
-                  <label class="contest-form__label contest-form__label--tel" for="tel">Номер телефона</label>
+              <legend class="fieldset__legend">Контактная информация</legend>
+              <ul class="fieldset__field-group">
+                <li class="fieldset__field input-text input-text--tel">
+                  <input class="input-text__field input-text__field--tel" type="tel" id="tel" name="user-tel" placeholder="Номер, пожалуйста">
+                  <label class="input-text__label input-text__label--tel" for="tel">Номер телефона</label>
                 </li>
-                <li class="contest-form__field contest-form__field--email">
-                  <input class="contest-form__input contest-form__input--email" type="email" id="email" name="user-email" placeholder="Введите почту*" required="">
-                  <label class="contest-form__label contest-form__label--email" for="email">Адрес почты</label>
+                <li class="fieldset__field input-text input-text--email">
+                  <input class="input-text__field input-text__field--email" type="email" id="email" name="user-email" placeholder="Введите почту*" required="">
+                  <label class="cinput-text__label input-text__label--email" for="email">Адрес почты</label>
                 </li>
               </ul>
             </div>
@@ -126,14 +127,14 @@
             </div>
           </fieldset>
 
-          <fieldset class="contest-form__fieldset">
+          <fieldset class="contest-form__fieldset fieldset">
             <div class="contest-form__wrapper">
-              <legend class="contest-form__legend">Опишите свои эмоции</legend>
-              <textarea class="contest-form__input contest-form__input--textarea" id="trip-story" name="trip-story" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="6"></textarea>
+              <legend class="fieldset__legend">Опишите свои эмоции</legend>
+              <textarea class="fieldset__field input-textarea" id="trip-story" name="trip-story" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="6"></textarea>
             </div>
           </fieldset>
           <div class="contest-form__container">
-            <button class="contest-form__button button-green" type="submit">Отправить форму</button>
+            <button class="contest-form__button button button--submit-form" type="submit">Отправить форму</button>
             <p class="contest-form__note">* — обязательные поля</p>
           </div>
         </form>
