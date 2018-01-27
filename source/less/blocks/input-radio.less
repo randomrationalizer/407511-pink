@@ -1,0 +1,26 @@
+.input-radio {
+  position: relative;
+  display: block;
+}
+
+.input-radio__label {
+  .form-toggle-style();
+
+  &::before {
+    border-radius: 50%;
+  }
+}
+
+.input-radio__field:checked + .input-radio__label::before {
+  box-shadow: inset 0 0 0 10px white;
+  background-color: @pink;
+}
+
+.input-radio__field:hover + .input-radio__label::before {
+  border-color: @blue-dark;
+}
+
+.input-radio__field:active + .input-radio__label::before,
+.input-radio__field:focus + .input-radio__label::before {
+  border-color: @pink;
+}

@@ -1,0 +1,25 @@
+.hamburger {
+  display: block;
+  .reset();
+  width: 50px;
+  height: 24px;
+  background: @blue-dark url("/img/icon-menu-burger.svg") no-repeat 0 0;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: @mobile-width-only) {
+  .navigation--nojs ~ .hamburger {
+    display: none;
+  }
+
+  .navigation--opened ~ .hamburger {
+    width: 24px;
+    height: 23px;
+    background: @blue-dark url("/img/icon-menu-cross.svg") no-repeat 0 0;
+  }
+
+  .navigation--closed ~ .hamburger {
+    background: transparent url("/img/icon-menu-burger.svg") no-repeat 0 0;
+  }
+}

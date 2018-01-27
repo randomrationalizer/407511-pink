@@ -1,0 +1,34 @@
+.input-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.input-text__label {
+  padding: 0 22px 16px 22px;
+  font-size: @font-size-small;
+  line-height: @line-height-big;
+  text-transform: uppercase;
+  color: @pink;
+}
+
+.input-text__field {
+  .input-text-field-style();
+  align-self: stretch;
+}
+
+/*@media (min-width: @tablet-width) {
+  .input-text {
+    flex-direction: row;
+  }
+
+  .input-text__field {  //Для полей ввода телефона и email
+    padding-left: 20px;
+  }
+
+  .input-text__label {
+    padding: 0 22px 0 0;
+  }
+}*/

@@ -1,0 +1,67 @@
+.features__title {
+  display: flex;
+  flex-direction: column;
+  .reset();
+  padding: 40px 20px 60px;
+  font-size: @font-size-extra-big;
+  line-height: auto;
+  font-weight: 300;
+  text-align: center;
+  background-image: linear-gradient(-185deg, white 86%, @gray-bg 86%);
+}
+
+.features__title-part:first-child {
+  font: inherit;
+  margin-bottom: 30px;
+}
+
+.features__list {
+  .reset();
+  padding: 50px @container-padding-mobile 0;
+  list-style: none;
+  text-align: center;
+  background-color: @gray-bg;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__heading {
+  .reset();
+  font-size: @font-size-medium;
+  line-height: @line-height-extra-small;
+  color: @heading-text-color;
+  background-color: @gray-bg;
+}
+
+.features__description {
+  margin: 0;
+  padding: 16px 0 30px 0;
+  font-size: @font-size-small;
+  line-height: @line-height-medium;
+}
+
+.features__photo {
+  height: 320px;
+  width: 157px;
+
+  &--cheer-up,
+  &--world-change {
+    display: none;
+  }
+}
+
+.features__img-wrapper {
+  max-height: 277px;
+  overflow: hidden;
+  order: 1;
+}
+
+.features__science {
+  display: none;
+}
+
+
