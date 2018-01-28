@@ -1,0 +1,83 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  padding: 16px 30px 17px 30px;
+  font-size: @font-size-medium;
+  font-weight: 700;
+  line-height: @line-height-small;
+  text-align: center;
+  vertical-align: middle;
+  color: @pink;
+  border: 3px solid @pink;
+  border-radius: 30px;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: @contrast-text-color;
+    background-color: @pink;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--cancel {
+    color: @main-text-color;
+    border-color: @main-text-color;
+    opacity: 0.1;
+
+    &:hover,
+    &focus {
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: @contrast-text-color;
+      background-color: @main-text-color;
+      opacity: 0.3;
+    }
+  }
+
+  &--download {
+    padding-bottom: 13px;
+    color: @contrast-text-color;
+    border-color: white;
+
+    &:hover,
+    &:focus {
+      color: @pink;
+      background-color: white;
+      box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.75);
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+      box-shadow: none;
+    }
+  }
+
+  &--submit-form {
+    padding: 16px 30px;
+    line-height: @line-height-big;
+    text-transform: uppercase;
+    color: @contrast-text-color;
+    border: none;
+    border-radius: 2px;
+    background-color: @green;
+
+    &:hover,
+    &:focus {
+      background-color: @green-dark;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: @gray;
+    }
+  }
+}

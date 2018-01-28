@@ -1,0 +1,48 @@
+.fieldset {
+  margin: 0;
+  padding: 38px 0 0;
+  border: none;
+}
+
+.fieldset__field-group {
+  .reset();
+  list-style: none;
+}
+
+.fieldset__field-group:not(:last-child) {
+  margin-bottom: 47px;
+}
+
+.fieldset__field {
+  margin-bottom: 17px;
+
+  &--checkbox {
+    margin-bottom: 47px;
+  }
+
+  &--radio {
+    margin-bottom: 36px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset__legend {
+  margin-bottom: 38px;
+  font-size: @font-size-small;
+  line-height: @line-height-small;
+  text-transform: uppercase;
+  color: @pink;
+  text-align: center;
+
+  &--textarea {
+    margin-bottom: 10px;
+    line-height: @line-height-big;
+  }
+
+  &--contacts {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+
+  &--main-page {
+    display: none;
+  }
+}
+
+.page-footer__socials {
+  margin: 43px 0;
+}
+
+.page-footer__logo-image:hover .page-footer__logo-text,
+.page-footer__logo-image:focus .page-footer__logo-text {
+  fill: @pink;
+}
+
+.page-footer__logo-image:active {
+  fill-opacity: 0.3;
+}
+
+.page-footer__logo-image:active .page-footer__logo-text {
+  fill: @blue-dark;
+}

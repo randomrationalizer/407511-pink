@@ -1,0 +1,103 @@
+.photo__link {
+  display: block;
+  width: 280px;
+  .reset();
+
+  &--best-panorama {
+    position: relative;
+    width: 100%;
+    padding: 0;
+
+    &::before {
+      position: absolute;
+      content: "Панорама дня";
+      top: 0;
+      right: 20px;
+      width: 140px;
+      padding: 6px 0 7px;
+      font-size: @font-size-extra-small;
+      line-height: @line-height-medium;
+      font-weight: 700;
+      color: @contrast-text-color;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: @pink;
+    }
+  }
+}
+
+.photo__img {
+  display: block;
+  width: 280px;
+  height: 180px;
+  background-color: @user-photo-bg;
+
+  &--best-panorama {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.photo__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 18px;
+  font-size: @font-size-small;
+  line-height: @line-height-medium;
+  background-color: @gray-bg;
+
+  &--best-panorama {
+    margin: 0 20px;
+  }
+}
+
+.photo__data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  .reset();
+}
+
+.photo__author {
+  .reset();
+  font-size: @font-size-small;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.photo__time {
+  font-size: @font-size-extra-small;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo__comment {
+  margin: 0;
+}
+
+.photo__likes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  margin-top: 10px;
+}
+
+.photo__likes-count {
+  font-size: @font-size-extra-small;
+  text-transform: uppercase;
+  color: @pink;
+}
+
+.photo__like-btn {
+  order: -1;
+  .reset();
+  margin-top: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+.photo__like-icon {
+  fill: @pink;
+}

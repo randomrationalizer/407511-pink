@@ -1,0 +1,22 @@
+.input-checkbox {
+  position: relative;
+  display: block;
+}
+
+.input-checkbox__label {
+  .form-toggle-style();
+}
+
+.input-checkbox__field:checked + .input-checkbox__label::before {
+  background: white url("/img/icon-tick.png") no-repeat 50% 50%;
+  background-size: 22px 16px;
+}
+
+.input-checkbox__field:hover + .input-checkbox__label::before {
+  border-color: @blue-dark;
+}
+
+.input-checkbox__field:active + .input-checkbox__label::before,
+.input-checkbox__field:focus + .input-checkbox__label::before {
+  border-color: @pink;
+}

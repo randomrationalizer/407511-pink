@@ -1,0 +1,36 @@
+.contest-form__wrapper {
+  padding: 0 @container-padding-mobile 44px;
+}
+
+.contest-form__group {
+  .reset();
+  list-style: none;
+}
+
+.contest-form__fieldset {
+  &:nth-child(even) {
+    background-color: @gray-bg;
+  }
+}
+
+.contest-form__field:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.contest-form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 20px 16px;
+}
+
+.contest-form__note {
+  .reset();
+  margin-top: 35px;
+  font-size: @font-size-small;
+  text-transform: uppercase;
+}
+
+.contest-form__asterisk {
+  color: @pink;
+}
