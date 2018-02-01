@@ -23,7 +23,7 @@
     inset 0 -1px 0 0 black;
 }
 
-@media (max-width: @mobile-width-only) {
+@media (max-width: @tablet-width-only) {
   .navigation--nojs ~ .page-header__logo-wrapper {
     order: 1;
   }
@@ -34,8 +34,6 @@
 
   .navigation--closed ~ .page-header__logo-wrapper {
     order: 1;
-    /*background-color: black;
-    opacity: 0.3;*/
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: none;
   }
@@ -51,21 +49,13 @@
   height: 22px;
 }
 
-/* Для планшетной версии
-
-.page-header__inner {
-  padding-left: @content-padding;
-  padding-right: @content-padding;
-}
-*/
-
 .page-header__hamburger {
   position: absolute;
   bottom: 21px;
   right: @container-padding-mobile;
 }
 
-@media (max-width: @mobile-width-only) {
+@media (max-width: @tablet-width-only) {
   .navigation--nojs ~ .page-header__hamburger {
     top: 21px;
   }
@@ -76,5 +66,47 @@
 
   .navigation--closed ~ .page-header__hamburger {
     bottom: 21px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-wrapper {
+    padding: 27px @container-padding-mobile 41px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__logo-wrapper {
+    order: -1;
+    width: 150px;
+    padding: 27px 0 43px;
+    background: none;
+    box-shadow: none;
+  }
+
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .page-header__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+    padding-left: @content-padding;
+    padding-right: @content-padding;
+  }
+
+  .page-header__hamburger {
+    display: none;
+  }
+
+  .page-header__navigation {
+    width: 650px;
   }
 }

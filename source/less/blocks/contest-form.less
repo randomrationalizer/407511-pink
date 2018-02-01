@@ -34,3 +34,78 @@
 .contest-form__asterisk {
   color: @pink;
 }
+
+@media (min-width: @tablet-width) {
+  .contest-form {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contest-form__wrapper {
+    padding-left: 62px;
+    padding-right: 62px;
+
+    &--name {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .contest-form__fieldset {
+    &:nth-child(even) {
+      background-color: white;
+    }
+
+    &--name {
+      order: 1;
+    }
+
+    &--app-platform {
+      order: 2;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--achievements {
+      order: 4;
+    }
+
+    &--message {
+      order: 5;
+    }
+  }
+
+  .contest-form__container {
+    order: 6;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    padding: 8px 0 16px;
+  }
+
+  .contest-form__note {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest-form {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contest-form__container {
+    width: 940px;
+  }
+}

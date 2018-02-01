@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <nav class="page-header__inner">
-        <ul class="navigation page-header__navigation navigation--closed navigation--nojs">
+        <ul class="navigation page-header__navigation navigation--opened navigation--nojs">
           <li class="navigation__item  navigation__item--current">
             <a class="navigation__link">Главная</a>
           </li>
@@ -36,7 +36,7 @@
 
     <main class="page-main">
       <section class="page-title page-title--main-page">
-        <h1 class="page-title__heading page-title__heading--main-page">Мобильное приложение Pink</h1>
+        <h1 class="page-title__heading page-title__heading--main-page">Взгляните на жизнь иначе!</h1>
         <img class="page-title__iphone-hand" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение Pink на iPhone">
         <div class="download-app">
           <a class="download-app__button button button--download" href="https://www.apple.com/ru/itunes/" title="Скачать приложение Pink на iTunes">Скачать приложение</a>
@@ -66,33 +66,38 @@
 
       <section class="features">
         <h2 class="features__title"><span class="features__title-part">Устали от серости мегаполиса?</span><span class="features__title-part">Нам есть,<br>что вам предложить!</span></h2>
-        <ul class="features__list">
-          <li class="features__item">
-            <div class="features__img-wrapper">
-              <img class="features__photo features__photo--cheer-up" src="img/step1.png" width="186" height="300" alt="Pink поднимает настроение">
-            </div>
-            <h3 class="features__heading">Поднимает настроение</h3>
-            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="features__item">
-            <div class="features__img-wrapper">
-              <img class="features__photo features__photo--world-change" src="img/step2.png" width="186" height="300" alt="Pink меняет мир вокруг">
-            </div>
-            <h3 class="features__heading">Меняет мир вокруг</h3>
-            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features__item features__item--friends">
-            <div class="features__img-wrapper">
-              <img class="features__photo features__photo--new-friends" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Pink заводит новых друзей">
-            </div>
-            <h3 class="features__heading">Заводит новых друзей</h3>
-            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <div class="features__science research">
-          <h4 class="research__heading">Эффект на 24 часа!</h4>
-          <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="research__link" href="#">Узнать больше об исследовани</a>
+        <div class="features__wrapper">
+          <div class="features__img-wrapper">
+            <img class="features__photo features__photo--cheer-up" src="img/step1.png" width="186" height="300" alt="Pink поднимает настроение">
+          </div>
+          <div class="features__img-wrapper">
+            <img class="features__photo features__photo--world-change" src="img/step2.png" width="186" height="300" alt="Pink меняет мир вокруг">
+          </div>
+          <div class="features__img-wrapper">
+            <img class="features__photo features__photo--new-friends" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Pink заводит новых друзей">
+          </div>
+
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__heading">Поднимает настроение</h3>
+              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__heading">Меняет мир вокруг</h3>
+              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item features__item--friends">
+              <h3 class="features__heading">Заводит новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+        <div class="features__research research">
+          <div class="research__wrapper">
+            <h4 class="research__heading">Эффект на 24 часа!</h4>
+            <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="research__link" href="#">Узнать больше об исследовани</a>
+        </div>
         </div>
       </section>
 
@@ -120,6 +125,7 @@
           <table class="price-list__table">
             <thead>
               <tr class="price-list__row">
+                <th class="price-list__item price-list__item--options-column">Опции приложения</th>
                 <th class="price-list__item" colspan="2">
                   <p class="price-list__item-title">База</p>
                   <p class="price-list__price">1,99 USD</p>
@@ -136,7 +142,8 @@
             </thead>
             <tbody>
               <tr class="price-list__row">
-                <td class="price-list__option">Розовый фильтр</td>
+                <td class="price-list__option price-list__option--options-cell">Розовый фильтр</td>
+                <td class="price-list__option price-list__option--cut-off">Розовый фильтр</td>
                 <td class="price-list__option-value">
                   <span class="visually-hidden">Да</span>
                   <svg class="price-list__icon price-list__icon--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
@@ -144,7 +151,7 @@
                   </svg>
                 </td>
 
-                <td class="price-list__option">Розовый фильтр</td>
+                <td class="price-list__option price-list__option--cut-off">Розовый фильтр</td>
                 <td class="price-list__option-value">
                   <span class="visually-hidden">Да</span>
                   <svg class="price-list__icon price-list__icon--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
@@ -152,33 +159,7 @@
                   </svg>
                 </td>
 
-                <td class="price-list__option">Розовый фильтр</td>
-                <td class="price-list__option-value">
-                  <span class="visually-hidden">Да</span>
-                  <svg class="price-list__icon price-list__icon--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                  </svg>
-                </td>
-              </tr>
-
-              <tr class="price-list__row">
-                <td class="price-list__option">Смайлики</td>
-                <td class="price-list__option-value">
-                  <span class="visually-hidden">Нет</span>
-                  <svg class="price-list__icon price-list__icon--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                  </svg>
-                </td>
-
-                <td class="price-list__option">Смайлики</td>
-                <td class="price-list__option-value">
-                  <span class="visually-hidden">Да</span>
-                  <svg class="price-list__icon price-list__icon--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                  </svg>
-                </td>
-
-                <td class="price-list__option">Смайлики</td>
+                <td class="price-list__option price-list__option--cut-off">Розовый фильтр</td>
                 <td class="price-list__option-value">
                   <span class="visually-hidden">Да</span>
                   <svg class="price-list__icon price-list__icon--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
@@ -188,7 +169,8 @@
               </tr>
 
               <tr class="price-list__row">
-                <td class="price-list__option">Комментарии</td>
+                <td class="price-list__option price-list__option--options-cell">Смайлики</td>
+                <td class="price-list__option price-list__option--cut-off">Смайлики</td>
                 <td class="price-list__option-value">
                   <span class="visually-hidden">Нет</span>
                   <svg class="price-list__icon price-list__icon--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
@@ -196,7 +178,26 @@
                   </svg>
                 </td>
 
-                <td class="price-list__option">Комментарии</td>
+                <td class="price-list__option price-list__option--cut-off">Смайлики</td>
+                <td class="price-list__option-value">
+                  <span class="visually-hidden">Да</span>
+                  <svg class="price-list__icon price-list__icon--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
+                </td>
+
+                <td class="price-list__option price-list__option--cut-off">Смайлики</td>
+                <td class="price-list__option-value">
+                  <span class="visually-hidden">Да</span>
+                  <svg class="price-list__icon price-list__icon--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr class="price-list__row">
+                <td class="price-list__option price-list__option--options-cell">Комментарии</td>
+                <td class="price-list__option price-list__option--cut-off">Комментарии</td>
                 <td class="price-list__option-value">
                   <span class="visually-hidden">Нет</span>
                   <svg class="price-list__icon price-list__icon--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
@@ -204,7 +205,15 @@
                   </svg>
                 </td>
 
-                <td class="price-list__option">Комментарии</td>
+                <td class="price-list__option price-list__option--cut-off">Комментарии</td>
+                <td class="price-list__option-value">
+                  <span class="visually-hidden">Нет</span>
+                  <svg class="price-list__icon price-list__icon--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  </svg>
+                </td>
+
+                <td class="price-list__option price-list__option--cut-off">Комментарии</td>
                 <td class="price-list__option-value">
                   <span class="visually-hidden">Да</span>
                   <svg class="price-list__icon price-list__icon--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">

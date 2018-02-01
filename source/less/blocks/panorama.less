@@ -1,54 +1,69 @@
-.photo {
-  width: 280px;
-}
-
-.photo__link {
+.panorama__link {
+  position: relative;
   display: block;
+  width: 100%;
   .reset();
+
+  &::before {
+    position: absolute;
+    content: "Панорама дня";
+    top: 0;
+    right: 20px;
+    width: 140px;
+    padding: 6px 0 7px;
+    font-size: @font-size-extra-small;
+    line-height: @line-height-medium;
+    font-weight: 700;
+    color: @contrast-text-color;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: @pink;
+  }
 }
 
-.photo__img {
+.panorama__img {
   display: block;
-  width: 280px;
-  height: 180px;
+  width: 100%;
+  height: 100%;
   background-color: @user-photo-bg;
 }
 
-.photo__info {
+.panorama__info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 20px;
   padding: 20px 18px;
   font-size: @font-size-small;
   line-height: @line-height-medium;
   background-color: @gray-bg;
 }
 
-.photo__data {
+.panorama__data {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
   .reset();
 }
 
-.photo__author {
+.panorama__author {
   .reset();
   font-size: @font-size-small;
   font-weight: 700;
   margin-right: 5px;
 }
 
-.photo__time {
+.panorama__time {
   font-size: @font-size-extra-small;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.photo__comment {
+.panorama__comment {
   margin: 0;
 }
 
-.photo__likes {
+.panorama__likes {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,13 +71,13 @@
   margin-top: 10px;
 }
 
-.photo__likes-count {
+.panorama__likes-count {
   font-size: @font-size-extra-small;
   text-transform: uppercase;
   color: @pink;
 }
 
-.photo__like-btn {
+.panorama__like-btn {
   order: -1;
   .reset();
   margin-top: 5px;
@@ -70,29 +85,13 @@
   background-color: transparent;
 }
 
-.photo__like-icon {
+.panorama__like-icon {
   fill: @pink;
 }
 
-@media (min-width: @tablet-width) {
-  .photo {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-  }
-
-  .photo__info {
-    flex-grow: 1;
-  }
-
-  .photo__img {
-    width: 300px;
-    height: 300px;
-  }
-}
-
 @media (min-width: @desktop-width) {
-  .photo__img {
-    height: 400px;
+  .panorama__info {
+    width: 940px;
+    margin: 0 auto;
   }
 }

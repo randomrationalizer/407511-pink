@@ -19,16 +19,21 @@
   align-self: stretch;
 }
 
-/*@media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   .input-text {
     flex-direction: row;
+    align-items: center;
   }
 
-  .input-text__field {  //Для полей ввода телефона и email
-    padding-left: 20px;
+  .input-text__field {
+    flex-grow: 1;
+
+    &--tel {
+      padding-left: 20px;
+    }
   }
 
   .input-text__label {
     padding: 0 22px 0 0;
   }
-}*/
+}

@@ -3,7 +3,12 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 20px 40px;
-  background-color: @gray-bg;
+}
+
+.editor__image {
+  display: block;
+  width: 280px;
+  height: 374px;
 }
 
 .editor__filter-button {
@@ -25,17 +30,18 @@
   align-items: center;
   justify-content: space-around;
   width: 240px;
-  margin: 42px 0 39px;
+  margin: 42px auto 39px;
 }
 
 .editor__filter-ranges {
   position: relative;
-  padding-bottom: 34px;
+  width: 240px;
+  margin: 0 auto 34px;
 
   &::after {
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: -34px;
     left: -40px;
     width: 320px;
     height: 1px;
@@ -71,9 +77,42 @@
 
 .editor__buttons {
   width: 280px;
+  margin: 0 auto;
   padding-top: 38px;
 }
 
 .editor__button:first-child {
   margin-bottom: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .editor {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .editor__tools-wrapper {
+    width: 300px;
+  }
+
+  .editor__image {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .editor {
+    padding: 57px 60px 57px 80px;
+  }
+
+  .editor__tools-wrapper {
+    width: 410px;
+  }
+
+  .editor__buttons {
+    margin-top: auto;
+  }
 }

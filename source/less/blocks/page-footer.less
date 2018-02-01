@@ -26,3 +26,27 @@
 .page-footer__logo-image:active .page-footer__logo-text {
   fill: @blue-dark;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    width: 620px;
+    margin: 0 auto;
+
+    &--main-page {
+      display: flex;
+    }
+  }
+
+  .page-footer__socials {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 940px;
+    padding-left: @content-padding;
+    padding-right: @content-padding;
+  }
+}

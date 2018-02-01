@@ -34,3 +34,27 @@
   height: 100%;
   border: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .map {
+    height: 374px;
+    background: @map-bg url("/img/bg-map-mobile@1x.png") no-repeat 50% 100%;
+    background-size: 660px auto;
+
+    &::after {
+      bottom: 135px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    height: 500px;
+    background: @map-bg url("/img/bg-map-mobile@1x.png") no-repeat 50% 100%;
+    background-size: 960px auto;
+
+    &::after {
+      bottom: 203px;
+    }
+  }
+}
