@@ -1,0 +1,42 @@
+@media (min-width: @tablet-width) {
+  .research {
+    width: 620px;
+    padding: 52px @container-padding-mobile 58px;
+  }
+
+  .research__wrapper {
+    position: relative;
+    padding-left: 310px;
+    margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 238px;
+      height: 276px;
+      background: transparent url("/img/icon24.svg") no-repeat 0 0;
+      background-size: 238px auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    width: 940px;
+    padding: 17px @content-padding 67px;
+  }
+
+  .research__wrapper {
+    width: 570px;
+    padding-left: 370px;
+
+    &::before {
+      width: 298px;
+      height: 345px;
+      background: transparent url("/img/icon24.svg") no-repeat 0 0;
+      background-size: 298px auto;
+    }
+  }
+}

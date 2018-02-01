@@ -46,3 +46,34 @@
     display: none;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .fieldset {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fieldset {
+    width: 940px;
+
+    &--name {
+      width: 433px;
+    }
+
+    &--app-platform {
+      width: 433px;
+    }
+  }
+
+  .fieldset__field-group {
+    &--contacts {
+      display: flex;
+    }
+
+    &--achievements {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

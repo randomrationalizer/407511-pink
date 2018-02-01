@@ -8,8 +8,8 @@
   }
 
   &--inner-page {
-    padding-top: 36px;
-    min-height: 134px;
+    padding: 36px 0;
+    min-height: 100px;
   }
   /*background: @blue-darker url("/img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: 320px auto;*/
@@ -17,9 +17,9 @@
 
 .page-title__heading {
   margin: 0;
-  padding: 0 20px;
+  padding: 0 @container-padding-mobile;
   font-size: @font-size-extra-big;
-  line-height: auto;
+  line-height: @line-height-auto;
   font-weight: 300;
   color: @contrast-text-color;
   text-align: center;
@@ -30,8 +30,64 @@
 }
 
 .page-title__iphone-hand {
+  align-self: flex-start;
   display: block;
   width: 258px;
   height: 286px;
-  align-self: flex-start;
+  margin: 0 auto;
+  transform: translateX(-30px);
+}
+
+@media (min-width: @tablet-width) {
+  .page-title {
+    position: relative;
+    align-items: flex-start;
+    width: 660px;
+    margin: 0 auto;
+
+    &--main-page {
+      padding-top: 74px;
+    }
+
+    &--inner-page {
+      padding: 74px 0;
+      min-height: 182px;
+    }
+  }
+
+  .page-title__iphone-hand {
+    position: absolute;
+    top: 74px;
+    left: 50%;
+    z-index: -1;
+  }
+
+  .page-title__heading {
+    &--main-page {
+      display: block;
+      width: 300px;
+    }
+
+    &--inner-page {
+      width: 500px;
+      margin: 0 auto;
+      font-size: @font-size-giant;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-title {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &--main-page {
+      padding-top: 99px;
+    }
+
+    &--inner-page {
+      min-height: 136px;
+    }
+  }
 }

@@ -4,7 +4,7 @@
   .reset();
   list-style: none;
 
-  @media (max-width: @mobile-width-only) {
+  @media (max-width: @tablet-width-only) {
     &--opened {
       display: flex;
       position: static;
@@ -38,11 +38,22 @@
   text-align: center;
 }
 
-/*
-Для десктопа
+@media (min-width: @desktop-width) {
+  .navigation {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 
-.navigation__item {
-  padding: 47px 0 45px 0 ;
-  margin-right: 83px;
+  .navigation__item {
+    background: none;
+    box-shadow: none;
+  }
+
+  .navigation__link {
+    padding: 44px @container-padding-mobile;
+    line-height: @line-height-small;
+    font-weight: 400;
+    text-transform: none;
+  }
 }
-*/
+/*поправить размеры ссылок для всех версий*/

@@ -1,5 +1,6 @@
 .user-photos {
   background-color: white;
+  margin: 0 auto;
 }
 
 .user-photos__intro-text {
@@ -8,4 +9,14 @@
   font-size: @font-size-small;
   line-height: @line-height-big;
   text-align: center;
+}
+
+.user-photos__panorama {
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photos__panorama {
+    margin-bottom: 50px;
+  }
 }

@@ -1,6 +1,41 @@
+.post-photo {
+  background-color: @gray-bg;
+}
+
 .post-photo__note {
-  padding: 38px 20px;
+  padding: 21px @container-padding-mobile 38px;
   margin: 0;
   font-size: @font-size-small;
   text-align: center;
+  background-color: white;
+}
+
+.post-photo__wrapper {
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .post-photo__wrapper {
+    width: 660px;
+  }
+
+  .post-photo__note {
+    font-size: @font-size-medium;
+    padding: 47px 20px 67px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post-photo {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .post-photo__wrapper {
+    width: auto;
+  }
+
+  .post-photo__note {
+    padding: 7px @content-padding 64px;
+  }
 }
