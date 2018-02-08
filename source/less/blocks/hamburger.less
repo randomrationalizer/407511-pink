@@ -1,11 +1,41 @@
 .hamburger {
+  position: relative;
   display: block;
   .reset();
   width: 50px;
   height: 24px;
-  background: @blue-dark url("/img/icon-menu-burger.svg") no-repeat 0 0;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: white;
+    box-shadow: 0 -10px 0 0 white,
+      0 10px 0 0 white;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: @pink;
+      box-shadow: 0 -10px 0 0 @pink,
+      0 10px 0 0 @pink;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.hamburger:active::before {
+    opacity: 0.3;
 }
 
 @media (max-width: @tablet-width-only) {
@@ -16,10 +46,36 @@
   .navigation--opened ~ .hamburger {
     width: 24px;
     height: 23px;
-    background: @blue-dark url("/img/icon-menu-cross.svg") no-repeat 0 0;
-  }
 
-  .navigation--closed ~ .hamburger {
-    background: transparent url("/img/icon-menu-burger.svg") no-repeat 0 0;
+    &::before {
+      box-shadow: none;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: white;
+      transform: rotate(-45deg);
+    }
+
+    &:hover,
+    &:focus {
+      &::before,
+      &::after {
+        background-color: @pink;
+      }
+    }
+
+    &:active {
+      &::before,
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 }

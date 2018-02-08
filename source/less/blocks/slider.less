@@ -12,12 +12,28 @@
   font-size: 0;
   border: none;
   border-radius: 50%;
-  background-color: @gray-blue;
+  background-color: @blue-dark;
+  opacity: 0.3;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   &--active {
     background-color: white;
     box-shadow: 0 0 0 3px @blue-dark;
+    opacity: 1;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
   }
 
   &:not(:last-child) {

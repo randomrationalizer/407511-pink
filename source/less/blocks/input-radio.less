@@ -7,20 +7,25 @@
   .form-toggle-style();
 
   &::before {
+    left: 2px;
+    width: 35px;
+    height: 35px;
+    margin-top: -17px;
+    border: 10px solid white;
     border-radius: 50%;
+    box-shadow: 0 0 0 2px @gray;
   }
 }
 
 .input-radio__field:checked + .input-radio__label::before {
-  box-shadow: inset 0 0 0 10px white;
   background-color: @pink;
 }
 
 .input-radio__field:hover + .input-radio__label::before {
-  border-color: @blue-dark;
+  box-shadow: 0 0 0 2px @blue-dark;
 }
 
 .input-radio__field:active + .input-radio__label::before,
 .input-radio__field:focus + .input-radio__label::before {
-  border-color: @pink;
+  box-shadow: 0 0 0 2px @pink;
 }

@@ -1,14 +1,16 @@
 .socials__list {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  min-width: 280px;
   .reset();
   list-style: none;
 }
 
-.socials__item:not(:first-child) {
-  margin-left: 18px;
+.socials__item {
+  flex-basis: auto;
+  flex-shrink: 0;
+  margin: 0 6px 0 6px;
 }
 
 .socials__link {
@@ -32,6 +34,24 @@
 
 .socials__icon {
   fill: @pink;
+
+  &--twitter {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--fb {
+    width: 9px;
+    height: 18px;
+    margin: 0 0 3px 0;
+
+  }
+
+  &--youtube {
+    width: 15px;
+    height: 13px;
+    margin: 0 0 0 3px;
+  }
 }
 
 .socials__link:active .socials__icon {

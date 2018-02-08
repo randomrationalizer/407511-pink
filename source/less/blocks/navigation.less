@@ -29,31 +29,57 @@
 
 .navigation__link {
   display: block;
-  padding: 17px @container-padding-mobile 14px;
+  padding: 17px @container-padding-mobile 15px;
   font-size: @font-size-medium;
   line-height: @line-height-extra-big;
   font-weight: 700;
   color: @contrast-text-color;
   text-transform: uppercase;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    color: @pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .navigation {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .navigation__item {
+    position: relative;
     background: none;
     box-shadow: none;
+
+    &--current {
+      ::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: @contrast-text-color;
+      }
+    }
   }
 
   .navigation__link {
-    padding: 44px @container-padding-mobile;
+    padding: 10px 0;
     line-height: @line-height-small;
     font-weight: 400;
     text-transform: none;
+
+    &:active {
+      color: white;
+    }
   }
 }
-/*поправить размеры ссылок для всех версий*/

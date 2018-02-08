@@ -1,6 +1,6 @@
 .contacts__title {
   .reset();
-  padding: 48px 20px 40px;
+  padding: 42px 20px 36px;
   font-size: @font-size-extra-big;
   line-height: @line-height-auto;
   font-weight: 300;
@@ -12,21 +12,37 @@
   flex-direction: column;
   align-items: center;
   .reset();
-  padding: 0 20px 30px;
+  padding: 0 20px 37px;
   list-style: none;
 }
 
-.contacts__item:not(:last-child) {
-  margin-bottom: 24px;
+.contacts__item {
+  padding: 0 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  &--address {
+    padding-top: 3px;
+  }
+
+  &--mail {
+    padding-left: 24px;
+  }
 }
 
 .contacts__field {
   .reset();
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   font-size: @font-size-medium;
   line-height: @line-height-auto;
   font-weight: 700;
   text-align: center;
+
+  &--address {
+    margin-bottom: 5px;
+  }
 }
 
 .contacts__value {
@@ -40,6 +56,7 @@
 
 .contacts__email {
   position: relative;
+  vertical-align: middle;
 
   &:hover,
   &:focus {
@@ -69,31 +86,84 @@
   .contacts__title {
     width: 500px;
     margin: 0 auto;
+    padding: 45px 20px 44px;
     font-size: @font-size-huge;
   }
 
   .contacts__list {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 620px;
     margin: 0 auto;
+    padding: 0 20px 27px;
   }
 
   .contacts__item {
-    width: 300px;
+    width: 260px;
+    padding: 0 20px;
+
+    &--address {
+      margin: 0 auto;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 47px;
+    }
+  }
+
+  .contacts__field {
+    margin-bottom: 5px;
+
+    &--address {
+      margin-bottom: 8px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__title {
     width: 640px;
+    padding: 63px 20px 58px;
     font-size: @font-size-giant;
   }
 
   .contacts__list {
+    align-items: baseline;
     width: 940px;
-    padding-left: @content-padding;
-    padding-right: @content-padding;
+    padding: 0 @content-padding 22px;
+  }
+
+  .contacts__item {
+    &--phone {
+      order: 1;
+    }
+
+    &--mail {
+      order: 3;
+    }
+
+    &--address {
+      order: 2;
+      margin: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__field {
+    margin-bottom: 25px;
+
+    &--address {
+      margin-bottom: 25px;
+    }
+  }
+
+  .contacts__value {
+    &--address {
+      text-indent: -6px;
+    }
   }
 }

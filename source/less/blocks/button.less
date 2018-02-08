@@ -2,7 +2,7 @@
   display: block;
   box-sizing: border-box;
   width: 280px;
-  padding: 16px 30px 17px 30px;
+  padding: 16px 30px;
   font-size: @font-size-medium;
   font-weight: 700;
   line-height: @line-height-small;
@@ -12,6 +12,7 @@
   border: 3px solid @pink;
   border-radius: 30px;
   background-color: transparent;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -29,7 +30,9 @@
     opacity: 0.1;
 
     &:hover,
-    &focus {
+    &:focus {
+      color: @main-text-color;
+      background-color: transparent;
       opacity: 0.3;
     }
 
@@ -41,7 +44,7 @@
   }
 
   &--download {
-    padding-bottom: 13px;
+    padding-bottom: 15px;
     color: @contrast-text-color;
     border-color: white;
 
@@ -56,10 +59,15 @@
       color: rgba(210, 40, 86, 0.3);
       box-shadow: none;
     }
+
+    @media (min-width: @desktop-width) {
+      font-size: @font-size-bigger;
+      padding: 14px 28px 18px;
+    }
   }
 
   &--submit-form {
-    padding: 16px 30px;
+    padding: 17px 32px 16px 28px;
     line-height: @line-height-big;
     text-transform: uppercase;
     color: @contrast-text-color;
