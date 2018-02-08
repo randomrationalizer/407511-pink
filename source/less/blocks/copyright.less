@@ -7,6 +7,7 @@
 .copyright__link {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .copyright__link:hover .copyright__logo,
@@ -19,5 +20,16 @@
 }
 
 .copyright__logo {
+  align-self: flex-end;
   fill: @pink;
+  width: 27px;
+  height: 34px;
+  margin-top: 5px;
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    margin-right: 14px;
+    font-size: @font-size-medium;
+  }
 }

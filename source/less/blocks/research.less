@@ -1,13 +1,21 @@
+.research {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .research {
-    width: 620px;
-    padding: 52px @container-padding-mobile 58px;
+    display: block;
+    width: auto;
+    padding: 58px @container-padding-mobile 52px;
+    background-color: white;
   }
 
   .research__wrapper {
     position: relative;
-    padding-left: 310px;
+    width: 310px;
+    min-height: 276px;
     margin: 0 auto;
+    padding-left: 310px;
 
     &::before {
       position: absolute;
@@ -16,27 +24,85 @@
       left: 0;
       width: 238px;
       height: 276px;
-      background: transparent url("/img/icon24.svg") no-repeat 0 0;
+      background: url("/img/icon24.svg") no-repeat 0 0;
       background-size: 238px auto;
     }
+  }
+
+  .research__heading {
+    margin: 0;
+    padding: 38px 0 10px;
+    font-size: @font-size-extra-extra-big;
+    line-height: @line-height-giant;
+    font-weight: 700;
+  }
+
+  .research__text {
+    margin: 0;
+    padding-right: 10px;
+    font-size: @font-size-small;
+    line-height: @line-height-medium;
+  }
+
+  .research__link {
+    display: block;
+    margin-top: 11px;
+    font-size: @font-size-small;
+    line-height: @line-height-medium;
+    color: @pink;
+    text-decoration: underline;
+  }
+
+  .research__br-desk {
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .research {
-    width: 940px;
-    padding: 17px @content-padding 67px;
+    padding: 67px @content-padding;
+    background-color: @gray-bg;
   }
 
   .research__wrapper {
-    width: 570px;
-    padding-left: 370px;
+    width: 575px;
+    min-height: 345px;
+    padding-left: 365px;
 
     &::before {
       width: 298px;
       height: 345px;
-      background: transparent url("/img/icon24.svg") no-repeat 0 0;
       background-size: 298px auto;
     }
+  }
+
+  .research__heading {
+    padding: 94px 0 25px 0;
+    font-size: @font-size-extra-extra-big;
+    line-height: @line-height-big;
+
+    br {
+      display: none;
+    }
+  }
+
+  .research__text {
+    padding: 0;
+    font-size: @font-size-medium;
+    line-height: @line-height-big;
+  }
+
+  .research__br-tab {
+    display: none;
+  }
+
+  .research__br-desk {
+    display: block;
+  }
+
+  .research__link {
+    margin-top: 32px;
+    font-size: @font-size-medium;
+    line-height: @line-height-big;
   }
 }

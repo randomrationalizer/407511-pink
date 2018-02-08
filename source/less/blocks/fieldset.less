@@ -1,7 +1,22 @@
 .fieldset {
-  margin: 0;
   padding: 38px 0 0;
   border: none;
+
+  &--name {
+    padding: 35px 0 0;
+  }
+
+  &--contacts {
+    padding: 33px 0 0;
+  }
+
+  &--message {
+    padding: 0;
+  }
+
+  &--app-platform {
+    padding: 0;
+  }
 }
 
 .fieldset__field-group {
@@ -17,11 +32,11 @@
   margin-bottom: 17px;
 
   &--checkbox {
-    margin-bottom: 47px;
+    margin-bottom: 40px;
   }
 
   &--radio {
-    margin-bottom: 36px;
+    margin-bottom: 33px;
   }
 
   &:last-child {
@@ -30,26 +45,89 @@
 }
 
 .fieldset__legend {
-  margin-bottom: 38px;
+  width: 100%;
+  padding: 38px 40px 0;
   font-size: @font-size-small;
   line-height: @line-height-small;
   text-transform: uppercase;
   color: @pink;
   text-align: center;
+  background-color: @gray-bg;
 
   &--textarea {
     margin-bottom: 10px;
+    padding-top: 33px;
     line-height: @line-height-big;
+    background-color: white;
   }
 
   &--contacts {
     display: none;
   }
+
+  &--app-platform {
+    margin-bottom: 33px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .fieldset {
+    box-sizing: border-box;
     width: 620px;
+    border: 2px solid @gray;
+    border-radius: 2px;
+
+    &--name {
+      border: none;
+    }
+
+    &--contacts {
+      padding: 0;
+    }
+
+    &--achievements {
+      padding-top: 35px;
+    }
+  }
+
+  .fieldset__legend {
+    background-color: white;
+    width: auto;
+    margin-bottom: 37px;
+    padding: 0 30px 0;
+    line-height: @line-height-big;
+
+    &--contacts {
+      display: table;
+      margin-bottom: 31px;
+    }
+
+    &--achievements {
+      margin-bottom: 0;
+    }
+
+    &--textarea {
+      margin-bottom: 30px;
+    }
+  }
+
+  .fieldset__field {
+    &--name {
+      margin-bottom: 51px;
+    }
+
+    &--checkbox {
+      margin-bottom: 42px;
+    }
+
+    &--radio {
+      margin-bottom: 32px;
+    }
+
+    &--tel,
+    &--email {
+      margin-bottom: 29px;
+    }
   }
 }
 
@@ -58,22 +136,77 @@
     width: 940px;
 
     &--name {
-      width: 433px;
+      width: 435px;
+      padding: 21px 0 0;
     }
 
     &--app-platform {
-      width: 433px;
+      width: 435px;
+    }
+
+    &--achievements {
+      padding-top: 36px;
     }
   }
 
   .fieldset__field-group {
     &--contacts {
       display: flex;
+      justify-content: space-between;
+      align-items: baseline;
     }
 
     &--achievements {
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
       flex-wrap: wrap;
+    }
+  }
+
+  .fieldset__legend {
+    &--app-platform {
+      margin-bottom: 38px;
+      padding: 0 25px 0;
+    }
+
+    &--contacts {
+      margin-bottom: 28px;
+    }
+
+    &--textarea {
+      margin-bottom: 28px;
+    }
+  }
+
+  .fieldset__field {
+    &--tel,
+    &--email {
+      margin-bottom: 0;
+    }
+
+    &--checkbox {
+      width: 260px;
+
+      &:nth-child(2n) {
+        order: 2;
+      }
+
+      &:nth-child(6n-1),
+      &:nth-child(6n) {
+        width: 210px;
+      }
+
+      &:nth-child(6n-2),
+      &:nth-child(6n-3) {
+        width: 245px;
+      }
+
+      &:nth-child(6n-5),
+      &:nth-child(6n-4) {
+        margin-right: 5px;
+      }
     }
   }
 }

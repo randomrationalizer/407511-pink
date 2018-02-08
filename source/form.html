@@ -9,28 +9,37 @@
   <body>
     <header class="page-header">
       <nav class="page-header__inner">
-        <ul class="navigation page-header__navigation navigation--closed navigation--nojs">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="navigation__item navigation__item--current">
-            <a class="navigation__link">Конкурс</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-          </a>
+        <div class="page-header__wrapper">
+          <ul class="navigation page-header__navigation navigation--opened navigation--nojs">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo" href="index.html" title="Логотип Pink">
+              <svg class="page-header__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+                <g>
+                  <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+                  <path d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+                  <path d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+                  <path d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <button class="hamburger page-header__hamburger" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
         </div>
-        <button class="hamburger page-header__hamburger" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
       </nav>
     </header>
 
@@ -46,15 +55,15 @@
           <fieldset class="contest-form__fieldset contest-form__fieldset--name fieldset fieldset--name">
             <div class="contest-form__wrapper contest-form__wrapper--name">
               <ul class="contest-form__group">
-                <li class="contest-form__field input-text">
+                <li class="fieldset__field fieldset__field--name input-text">
                   <label class="input-text__label" for="user-surname">Фамилия:</label>
-                  <input class="input-text__field" type="text" id="user-surname" name="user-surname" placeholder="Укажите фамилию*" required>
+                  <input class="input-text__field" type="text" id="user-surname" name="user-surname" placeholder="Укажите фамилию *" required>
                 </li>
-                <li class="contest-form__field input-text">
+                <li class="fieldset__field fieldset__field--name input-text">
                   <label class="input-text__label" for="user-name">Имя:</label>
-                  <input class="input-text__field" type="text" id="user-name" name="user-name" placeholder="Введите ваше имя*" required>
+                  <input class="input-text__field" type="text" id="user-name" name="user-name" placeholder="Введите ваше имя *" required>
                 </li>
-                <li class="contest-form__field input-text">
+                <li class="fieldset__field fieldset__field--name input-text">
                   <label class="input-text__label" for="user-middle-name">Отчество:</label>
                   <input class="input-text__field" type="text" id="user-middle-name" name="user-middle-name" placeholder="Ну и отчество тоже">
                 </li>
@@ -62,9 +71,10 @@
             </div>
           </fieldset>
 
-          <fieldset class="contest-form__fieldset contest-form__fieldset--achievements fieldset">
-            <div class="contest-form__wrapper">
-              <legend class="fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
+          <fieldset class="contest-form__fieldset contest-form__fieldset--achievements fieldset fieldset--achievements">
+            <legend class="fieldset__legend fieldset__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
+            <div class="contest-form__wrapper contest-form__wrapper--achievements">
+
               <ul class="fieldset__field-group fieldset__field-group--achievements">
                 <li class="fieldset__field fieldset__field--checkbox input-checkbox">
                   <input class="visually-hidden input-checkbox__field" type="checkbox" id="shark" name="trip-achievement" value="shark-selfie" checked="">
@@ -74,7 +84,7 @@
                   <input class="visually-hidden input-checkbox__field" type="checkbox" id="sunburn" name="trip-achievement" value="sunburn" checked="">
                   <label class="input-checkbox__label" for="sunburn">Обгорел на пляже</label>
                 </li>
-                <li class="fieldset__field fieldset__field--checkbox fieldset__field--checkbox input-checkbox">
+                <li class="fieldset__field fieldset__field--checkbox input-checkbox">
                   <input class="visually-hidden input-checkbox__field" type="checkbox" id="chuck" name="trip-achievement" value="meet-chuck">
                   <label class="input-checkbox__label" for="chuck">Видел Чака Норриса</label>
                 </li>
@@ -95,24 +105,26 @@
           </fieldset>
 
           <fieldset class="contest-form__fieldset contest-form__fieldset--contacts fieldset fieldset--contacts">
-            <div class="contest-form__wrapper">
-              <legend class="fieldset__legend fieldset__legend--contacts">Контактная информация</legend>
+            <legend class="fieldset__legend fieldset__legend--contacts">Контактная информация</legend>
+            <div class="contest-form__wrapper contest-form__wrapper--contacts">
+
               <ul class="fieldset__field-group fieldset__field-group--contacts">
-                <li class="fieldset__field input-text input-text--tel">
+                <li class="fieldset__field fieldset__field--tel input-text input-text--tel">
                   <label class="input-text__label input-text__label--tel" for="tel">Номер телефона</label>
                   <input class="input-text__field input-text__field--tel" type="tel" id="tel" name="user-tel" placeholder="Номер, пожалуйста">
                 </li>
-                <li class="fieldset__field input-text input-text--email">
+                <li class="fieldset__field fieldset__field--email input-text input-text--email">
                   <label class="input-text__label input-text__label--email" for="email">Адрес почты</label>
-                  <input class="input-text__field input-text__field--email" type="email" id="email" name="user-email" placeholder="Введите почту*" required>
+                  <input class="input-text__field input-text__field--email" type="email" id="email" name="user-email" placeholder="Введите почту *" required>
                 </li>
               </ul>
             </div>
           </fieldset>
 
           <fieldset class="contest-form__fieldset contest-form__fieldset--app-platform fieldset fieldset--app-platform">
-            <div class="contest-form__wrapper">
-              <legend class="fieldset__legend">С каким приложением путешествовали?</legend>
+            <legend class="fieldset__legend fieldset__legend--app-platform">С каким приложением путешествовали?</legend>
+            <div class="contest-form__wrapper contest-form__wrapper--app-platform">
+
               <ul class="fieldset__field-group">
                 <li class="fieldset__field fieldset__field--radio input-radio">
                   <input class="visually-hidden input-radio__field" type="radio" id="pink-ios" name="app-type" value="ios" checked="">
@@ -130,16 +142,17 @@
             </div>
           </fieldset>
 
-          <fieldset class="contest-form__fieldset contest-form__fieldset--message fieldset">
-            <div class="contest-form__wrapper">
-              <legend class="fieldset__legend fieldset__legend--textarea">Опишите свои эмоции</legend>
-              <textarea class="fieldset__field input-textarea" id="trip-story" name="trip-story" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <fieldset class="contest-form__fieldset contest-form__fieldset--message fieldset fieldset--message">
+            <legend class="fieldset__legend fieldset__legend--textarea">Опишите свои эмоции</legend>
+            <div class="contest-form__wrapper contest-form__wrapper--message">
+
+              <textarea class="fieldset__field input-textarea" id="trip-story" name="trip-story" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
 
           <div class="contest-form__container">
             <button class="contest-form__button button button--submit-form" type="submit">Отправить форму</button>
-            <p class="contest-form__note"><span class="contest-form__asterisk">*</span> — обязательные поля</p>
+            <p class="contest-form__note"><b class="contest-form__asterisk">*</b> — обязательные <span>для заполнения</span> поля</p>
           </div>
         </form>
       </section>
@@ -158,7 +171,7 @@
           <path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
         </svg>
       </div>
-      <section class="page-footer__socials socials">
+      <section class="page-footer__socials page-footer__socials--inner socials">
         <h2 class="visually-hidden">Pink в социальных сетях</h2>
         <ul class="socials__list">
           <li class="socials__item">

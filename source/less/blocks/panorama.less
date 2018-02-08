@@ -1,7 +1,7 @@
 .panorama__link {
   position: relative;
   display: block;
-  width: 100%;
+  width: auto;
   .reset();
 
   &::before {
@@ -10,7 +10,7 @@
     top: 0;
     right: 20px;
     width: 140px;
-    padding: 6px 0 7px;
+    padding: 5px 0 7px;
     font-size: @font-size-extra-small;
     line-height: @line-height-medium;
     font-weight: 700;
@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0 20px;
-  padding: 20px 18px;
+  padding: 17px 18px 21px 17px;
   font-size: @font-size-small;
   line-height: @line-height-medium;
   background-color: @gray-bg;
@@ -50,7 +50,7 @@
   .reset();
   font-size: @font-size-small;
   font-weight: 700;
-  margin-right: 5px;
+  margin-right: 4px;
 }
 
 .panorama__time {
@@ -65,14 +65,14 @@
 
 .panorama__likes {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  width: 120px;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .panorama__likes-count {
   font-size: @font-size-extra-small;
+  font-weight: 400;
   text-transform: uppercase;
   color: @pink;
 }
@@ -80,18 +80,74 @@
 .panorama__like-btn {
   order: -1;
   .reset();
-  margin-top: 5px;
+  width: 13px;
+  height: 12px;
+  margin: 3px 18px 1px 1px;
   border: none;
-  background-color: transparent;
+  background: transparent url("/img/icon-heart.svg") no-repeat 50% 50%;
+  background-size: 100%;
 }
 
-.panorama__like-icon {
-  fill: @pink;
+@media (min-width: @tablet-width) {
+  .panorama__link {
+    height: 509px;
+    overflow: hidden;
+
+    &::before {
+      top: 56px;
+      right: 20px;
+    }
+  }
+
+  .panorama__img {
+    width: 100%;
+    min-height: 509px;
+  }
+
+  .panorama__info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 23px 27px 25px;
+  }
+
+  .panorama__data {
+    order: 1;
+  }
+
+  .panorama__likes {
+    order: 2;
+    margin: 0;
+  }
+
+  .panorama__comment {
+    order: 3;
+  }
+
+  .panorama__like-btn {
+    order: 1;
+    margin: 2px 2px 1px 17px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .panorama__link {
+    height: 506px;
+    overflow: hidden;
+
+    &::before {
+      top: 54px;
+      right: 130px;
+    }
+  }
+
+  .panorama__img {
+    width: 100%;
+    min-height: 506px;
+  }
+
   .panorama__info {
-    width: 940px;
+    width: 883px;
     margin: 0 auto;
+    padding: 23px 30px 24px 27px;
   }
 }

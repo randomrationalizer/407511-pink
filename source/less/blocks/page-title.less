@@ -1,18 +1,28 @@
 .page-title {
-  display: flex;
-  flex-direction: column;
   width: 100%;
+  background-color: @main-title-bg;
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
 
   &--main-page {
-    padding-top: 110px;
+    padding-top: 462px;
+    background-image: url("/img/iphone-hand-mobile@1x.png"), url("/img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 177px, 50% 0;
+    background-size: 258px 286px, cover;
   }
 
   &--inner-page {
-    padding: 36px 0;
     min-height: 100px;
+    padding: 97px 0 40px;
   }
-  /*background: @blue-darker url("/img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
-  background-size: 320px auto;*/
+}
+
+.page-title__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .page-title__heading {
@@ -29,43 +39,42 @@
   }
 }
 
-.page-title__iphone-hand {
-  align-self: flex-start;
-  display: block;
-  width: 258px;
-  height: 286px;
-  margin: 0 auto;
-  transform: translateX(-30px);
-}
-
 @media (min-width: @tablet-width) {
   .page-title {
-    position: relative;
-    align-items: flex-start;
-    width: 660px;
-    margin: 0 auto;
-
     &--main-page {
-      padding-top: 74px;
+      padding: 203px 0 108px;
+      background-position: 170px 184px, 50% 0;
+      background-size: 470px 545px, cover;
     }
 
     &--inner-page {
-      padding: 74px 0;
       min-height: 182px;
+      padding: 180px 0 78px;
     }
+  }
+
+  .page-title__wrapper {
+    position: relative;
+    align-items: flex-start;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   .page-title__iphone-hand {
     position: absolute;
-    top: 74px;
+    top: 0;
     left: 50%;
     z-index: -1;
   }
 
   .page-title__heading {
+    font-size: @font-size-huge;
+
     &--main-page {
       display: block;
-      width: 300px;
+      width: 200px;
+      padding: 0 50px 30px;
     }
 
     &--inner-page {
@@ -78,16 +87,38 @@
 
 @media (min-width: @desktop-width) {
   .page-title {
-    width: 940px;
-    padding-left: 10px;
-    padding-right: 10px;
-
     &--main-page {
-      padding-top: 99px;
+      padding: 218px 0 121px;
+      background-position: 70% 209px, 50% 0;
+      background-size: 563px 644px, cover;
     }
 
     &--inner-page {
       min-height: 136px;
+      padding: 172px 0 86px;
+    }
+  }
+
+  .page-title__wrapper {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .page-title__heading {
+    font-size: @font-size-giant;
+
+    &--main-page {
+      width: 240px;
+      padding: 0 30px 52px;
+    }
+
+    &--inner-page {
+      width: 820px;
+    }
+
+    &--photo-page {
+      width: 500px;
     }
   }
 }

@@ -1,5 +1,5 @@
 .contest-form__wrapper {
-  padding: 0 @container-padding-mobile 44px;
+  padding: 0 @container-padding-mobile 42px;
 }
 
 .contest-form__group {
@@ -8,20 +8,18 @@
 }
 
 .contest-form__fieldset {
+  margin: 0;
+
   &:nth-child(even) {
     background-color: @gray-bg;
   }
-}
-
-.contest-form__field:not(:last-child) {
-  margin-bottom: 17px;
 }
 
 .contest-form__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8px 20px 16px;
+  padding: 6px 20px 16px;
 }
 
 .contest-form__note {
@@ -29,6 +27,10 @@
   margin-top: 35px;
   font-size: @font-size-small;
   text-transform: uppercase;
+}
+
+.contest-form__note span {
+  display: none;
 }
 
 .contest-form__asterisk {
@@ -41,21 +43,28 @@
     flex-direction: column;
     width: 620px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
   }
 
   .contest-form__wrapper {
-    padding-left: 62px;
-    padding-right: 62px;
+    padding: 0 58px 52px;
 
     &--name {
-      padding-left: 0;
-      padding-right: 0;
+      padding: 0;
+    }
+
+    &--contacts {
+      padding-bottom: 26px;
+    }
+
+    &--achievements {
+      padding-bottom: 46px;
     }
   }
 
   .contest-form__fieldset {
+    margin-bottom: 52px;
+
     &:nth-child(even) {
       background-color: white;
     }
@@ -87,25 +96,53 @@
     justify-content: space-between;
     align-items: center;
     width: 620px;
-    padding: 8px 0 16px;
+    padding: 15px 0 49px;
   }
 
   .contest-form__note {
     margin: 0;
+  }
+
+  .contest-form__button {
+    width: 300px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contest-form {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: stretch;
     flex-wrap: wrap;
     width: 940px;
     padding-left: 10px;
     padding-right: 10px;
   }
 
+  .contest-form__wrapper {
+    &--app-platform {
+      padding: 0 58px 46px 74px;
+    }
+
+    &--contacts {
+      padding-bottom: 13px;
+    }
+
+    &--achievements {
+      padding-bottom: 12px;
+    }
+
+    &--message {
+      padding-bottom: 44px;
+    }
+  }
+
   .contest-form__container {
     width: 940px;
+    padding: 12px 0 0;
+  }
+
+  .contest-form__note span {
+    display: inline;
   }
 }
