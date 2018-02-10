@@ -6,12 +6,20 @@
   background-position: 50% 0;
   background-size: cover;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("/img/bg-back-mobile@2x.jpg");
+  }
+
   &--main-page {
     padding-top: 462px;
     background-image: url("/img/iphone-hand-mobile@1x.png"), url("/img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 177px, 50% 0;
     background-size: 258px 286px, cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/img/iphone-hand-mobile@2x.png"), url("/img/bg-back-mobile@2x.jpg");
+    }
   }
 
   &--inner-page {
@@ -41,10 +49,21 @@
 
 @media (min-width: @tablet-width) {
   .page-title {
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/img/bg-back-tablet@2x.jpg");
+    }
+
     &--main-page {
       padding: 203px 0 108px;
-      background-position: 170px 184px, 50% 0;
-      background-size: 470px 545px, cover;
+      background-image: url("/img/iphone-hand-tablet@1x.jpg"), url("/img/bg-back-tablet@1x.jpg");
+      background-position: -20px 184px, 50% 0;
+      background-size: 700px 545px, cover;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("/img/iphone-hand-tablet@2x.png"), url("/img/bg-back-tablet@2x.jpg");
+      }
     }
 
     &--inner-page {
@@ -87,10 +106,21 @@
 
 @media (min-width: @desktop-width) {
   .page-title {
+    background-image: url("/img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/img/bg-back-desktop@2x.jpg");
+    }
+
     &--main-page {
       padding: 218px 0 121px;
-      background-position: 70% 209px, 50% 0;
-      background-size: 563px 644px, cover;
+      background-image: url("/img/iphone-hand-desktop@1x.png"), url("/img/bg-back-desktop@1x.jpg");
+      background-position: 98% 209px, 50% 0;
+      background-size: 1050px 645px, cover;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("/img/iphone-hand-desktop@2x.png"), url("/img/bg-back-desktop@2x.jpg");
+      }
     }
 
     &--inner-page {

@@ -24,8 +24,26 @@
       left: 0;
       width: 238px;
       height: 276px;
-      background: url("/img/icon24.svg") no-repeat 0 0;
+      background: transparent url("/img/icon-timer.svg") no-repeat 0 0;
       background-size: 238px auto;
+    }
+
+    &::after {
+      position: absolute;
+      content: "24";
+      top: 55px;
+      left: 18px;
+      width: 176px;
+      height: 167px;
+      padding-top: 9px;
+      font-size: @font-size-super-giant;
+      line-height: @line-height-super-giant;
+      font-weight: 700;
+      color: @pink;
+      text-align: center;
+      border: 13px solid @pink;
+      border-radius: 50%;
+      background-color: white;
     }
   }
 
@@ -73,6 +91,17 @@
       width: 298px;
       height: 345px;
       background-size: 298px auto;
+    }
+
+    &::after {
+      top: 69px;
+      left: 22px;
+      width: 220px;
+      height: 210px;
+      padding-top: 10px;
+      font-size: @font-size-titan;
+      line-height: @line-height-titan;
+      border: 17px solid @pink;
     }
   }
 
