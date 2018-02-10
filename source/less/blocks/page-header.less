@@ -31,10 +31,16 @@
   width: 100%;
 }
 
-.page-header__logo-image {
+.page-header__logo-mobile {
+  width: 75px;
+  height: 22px;
   fill: white;
 }
 
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  display: none;
+}
 
 .page-header__logo {
   display: block;
@@ -43,13 +49,13 @@
 
   &:hover,
   &:focus {
-    .page-header__logo-image {
+    .page-header__logo-mobile {
       fill: @pink;
     }
   }
 
   &:active {
-    .page-header__logo-image {
+    .page-header__logo-mobile {
       fill: white;
       opacity: 0.3;
     }
@@ -96,9 +102,34 @@
     padding: 27px @container-padding-mobile 43px;
   }
 
-  .page-header__logo {
-    width: 140px;
+  .page-header__logo-tablet {
+    display: inline;
+    width: 147px;
     height: 40px;
+  }
+
+  .page-header__logo-mobile,
+  .page-header__logo-desktop {
+    display: none;
+  }
+
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+
+    &:hover,
+    &:focus {
+      .page-header__logo-tablet path {
+        fill: @pink;
+      }
+    }
+
+    &:active {
+      .page-header__logo-tablet {
+        fill: white;
+        opacity: 0.3;
+      }
+    }
   }
 
   .page-header__inner {
@@ -140,9 +171,29 @@
     background: none;
   }
 
+  .page-header__logo-desktop {
+    display: inline;
+  }
+
+  .page-header__logo-mobile,
+  .page-header__logo-tablet {
+    display: none;
+  }
+
   .page-header__logo {
-    width: 147px;
-    height: 40px;
+    &:hover,
+    &:focus {
+      .page-header__logo-desktop path {
+        fill: @pink;
+      }
+    }
+
+    &:active {
+      .page-header__logo-desktop {
+        fill: white;
+        opacity: 0.3;
+      }
+    }
   }
 
   .page-header__inner {

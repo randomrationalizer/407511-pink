@@ -3,7 +3,6 @@
 }
 
 .features__title {
-  /*position: relative;*/
   display: flex;
   flex-direction: column;
   .reset();
@@ -13,30 +12,22 @@
   font-weight: 300;
   text-align: center;
   background-color: white;
-
-  /*&::after {
-    position: absolute;
-    content: "";
-    bottom: -28px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 33px;
-    background: url("/img/bg-triangle-white.svg") no-repeat 50% 100%;
-    background-size: 100% 33px;
-    z-index: 10;
-  }*/
 }
 
 .features__title-part:first-child {
   margin-bottom: 30px;
 }
 
+.features__about {
+  background: @gray-bg url("/img/bg-triangle-white.svg") no-repeat 50% 0;
+  background-size: 100% auto;
+}
+
 .features__wrapper {
   display: flex;
   flex-direction: column;
   padding: 87px @container-padding-mobile 0;
-  background-color: @gray-bg;
+  /*background-color: @gray-bg;*/
   /* background: @gray-bg url("/img/bg-triangle-white.svg") no-repeat 0 0;
   background-size: 100% auto;*/
 }
@@ -108,11 +99,6 @@
   .features__title {
     padding: 50px @container-padding-mobile 47px;
     font-size: @font-size-huge;
-
-    /*&::after {
-     height: 80px;
-     background-size: cover;
-    }*/
   }
 
   .features__title-part:first-child {
@@ -125,7 +111,7 @@
 
   .features__photo {
     width: 268px;
-    height: 547px;
+    height: 481px;
   }
 
   .features__img-wrapper {
@@ -162,12 +148,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
     width: 960px;
-    padding: 30px 0 0;
+    padding: 0;
   }
 
   .features__img-wrapper {
     width: 300px;
-    max-height: 301px;
+    max-height: 302px;
     text-align: center;
 
     &--cheer-up,
@@ -177,15 +163,15 @@
   }
 
   .features__photo {
-    width: 186px;
-    height: 382px;
+    width: 292px;
+    height: 302px;
   }
 
   .features__list {
     display: flex;
     justify-content: space-between;
     width: 940px;
-    margin-top: 57px;
+    margin-top: 56px;
     padding: 0 @content-padding;
   }
 
@@ -212,7 +198,7 @@
   }
 
   .features__title {
-    padding: 66px @content-padding 47px;
+    padding: 66px @content-padding 77px;
     font-size: @font-size-giant;
 
     &::after {

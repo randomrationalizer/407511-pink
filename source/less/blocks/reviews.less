@@ -1,7 +1,6 @@
 .reviews {
   padding: 42px 20px 44px;
   background-color: white;
-  background-image: linear-gradient(-185deg, white 86%, @gray-bg 86%);
 }
 
 .reviews__item {
@@ -94,13 +93,13 @@
     &::before {
       position: absolute;
       content: "";
-      top: -63px;
+      top: -115px;
       left: 50%;
       width: 79px;
-      height: 63px;
-      background: url("/img/quotes.svg") no-repeat 0 0;
-      background-size: 79px auto;
-      transform: translateX(-50%);
+      height: 65px;
+      background: url("/img/icon-quotes.svg") no-repeat 0 0;
+      background-size: 100% 100%;
+      transform: translateX(-47%);
     }
   }
 
@@ -118,20 +117,31 @@
     width: 22px;
     height: 41px;
     font-size: 0;
-    background: url("/img/arrow.svg") no-repeat 0 0;
+    background: url("/img/icon-review-arrow-left.svg") no-repeat 0 0;
     background-size: 22px auto;
+    border: none;
     cursor: pointer;
+    opacity: 0.3;
 
     &--prev {
-      top: 28px;
-      left: -38px;
+      top: 26px;
+      left: -60px;
     }
 
     &--next {
-      top: 28px;
-      right: -38px;
-      background: url("/img/arrow-right.svg") no-repeat 0 0;
+      top: 26px;
+      right: -60px;
+      background: url("/img/icon-review-arrow-right.svg") no-repeat 0 0;
       background-size: 22px auto;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 

@@ -24,7 +24,7 @@
 .panorama__img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: @user-photo-bg;
 }
 
@@ -100,8 +100,8 @@
   }
 
   .panorama__img {
-    width: 100%;
     min-height: 509px;
+    object-fit: cover;
   }
 
   .panorama__info {
@@ -132,7 +132,6 @@
 @media (min-width: @desktop-width) {
   .panorama__link {
     height: 506px;
-    overflow: hidden;
 
     &::before {
       top: 54px;
@@ -141,7 +140,6 @@
   }
 
   .panorama__img {
-    width: 100%;
     min-height: 506px;
   }
 
