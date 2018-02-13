@@ -20,21 +20,9 @@
     background: url("/img/bg-triangle-white-footer.svg") no-repeat 50% 0;
     background-size: 100% auto;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 70px;
-    left: 50%;
-    z-index: 5;
-    width: 36px;
-    height: 36px;
-    transform: translateX(-50%);
-    background: url("/img/icon-map-marker.svg") no-repeat 50% 0;
-  }
 }
 
-.map__iframe {
+.map__block {
   width: 100%;
   height: 100%;
   border: 0;
@@ -49,10 +37,6 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("/img/bg-map-tablet@2x.jpg");
     }
-
-    &::after {
-      bottom: 145px;
-    }
   }
 }
 
@@ -64,10 +48,6 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("/img/bg-map-desktop@2x.jpg");
-    }
-
-    &::after {
-      bottom: 202px;
     }
 
     &::before {
