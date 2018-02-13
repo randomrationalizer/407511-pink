@@ -24,7 +24,7 @@ if (document.querySelector(".map")) {
       disableDefaultUI: true
     });
     var pinkIcon = {
-      url: "img/icon-map-marker.svg",
+      url: "img/pic-map-marker.svg",
       scaledSize: new google.maps.Size(36, 36)
     };
     var marker = new google.maps.Marker({

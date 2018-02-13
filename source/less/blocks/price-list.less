@@ -21,6 +21,7 @@
   text-transform: uppercase;
   word-wrap: break-word;
   background-color: @blue-dark;
+  background-clip: padding-box;
   border-left: 2px solid @gray;
   border-right: 2px solid @gray;
 
@@ -74,10 +75,10 @@
 .price-list__option {
   width: 33.33%;
   margin: 0;
-  padding: 15px 23px;
+  padding: 16px 23px 14px;
   font-size: @font-size-small;
-  text-transform: uppercase;
   vertical-align: middle;
+  text-transform: uppercase;
   overflow-wrap: break-word;
 
   &--options-cell {
@@ -87,7 +88,7 @@
 
 .price-list__option-value {
   margin: 0;
-  padding: 8px 17px 0 0;
+  padding: 0 17px 0 0;
   text-align: center;
   vertical-align: middle;
   border-right: 2px solid @gray;
@@ -102,17 +103,26 @@
 }
 
 .price-list__icon {
+  display: block;
+  box-sizing: border-box;
+
   &--yes {
-    fill: @green-light;
+    width: 31px;
+    height: 21px;
+    background: url("/img/pic-yes.svg") no-repeat 0 50%;
+    margin: 0 auto;
   }
 
   &--no {
-    fill: @red;
+    width: 27px;
+    height: 27px;
+    background: url("/img/pic-no.svg") no-repeat 50% 0;
+    margin: 0 auto;
   }
 }
 
 .price-list__toggles {
-  margin: 45px auto 0;
+  margin: 43px auto 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -128,15 +138,16 @@
 
   .price-list__item {
     width: 155px;
-    padding: 13px 20px 7px;
+    padding: 13px 20px 8px;
 
-    &:not(:last-child) {
+    /*&:not(:last-child) {
       border-right: 2px solid @gray;
-    }
+    }*/
 
-    &:last-child {
+    /*&:last-child {
       border-radius: 0 5px 0 0;
-    }
+      border-right: 2px solid @gray;
+    }*/
 
     &--options-column {
       display: table-cell;
@@ -146,13 +157,13 @@
     }
 
     &:nth-child(2) {
-      border-radius: 5px 0 0 0;
+      border-left: 2px solid @blue-dark;
     }
 
     &--hit {
       &::before {
-        top: 5px;
-        left: 9px;
+        top: 4px;
+        left: 6px;
       }
 
       &::after {
@@ -160,6 +171,7 @@
         left: 0;
         width: 61px;
         height: 61px;
+        background: url("/img/bg-hit-tablet.svg") no-repeat 0 0;
         background-size: 61px 61px;
       }
     }
@@ -170,7 +182,7 @@
   }
 
   .price-list__price {
-    margin: 0;
+    margin: -2px 0 0;
     font-size: @font-size-medium;
   }
 
@@ -189,8 +201,19 @@
   }
 
   .price-list__option-value {
-    padding: 9px 0 2px;
+    padding: 0;
     border-right: 2px solid @gray;
+  }
+
+  .price-list__icon {
+    &--yes {
+      height: 43px;
+    }
+
+    &--no {
+      height: 43px;
+      background-position: 50% 50%;
+    }
   }
 
   .price-list__toggles {
@@ -209,7 +232,8 @@
 
   .price-list__item {
     width: 235px;
-    padding: 17px 19px 19px 21px;
+    padding: 18px 19px 19px 22px;
+
 
     &--hit {
       &::before {
@@ -220,6 +244,7 @@
       &::after {
         width: 74px;
         height: 73px;
+        background: url("/img/bg-hit.svg") no-repeat 0 0;
         background-size: 74px 73px;
       }
     }
@@ -230,7 +255,7 @@
   }
 
   .price-list__price {
-    margin-top: 1px;
+    margin-top: 0;
     font-size: @font-size-extra-big;
   }
 
@@ -238,11 +263,22 @@
     &--options-cell {
       font-size: @font-size-medium;
       width: 202px;
-      padding: 16px 10px 15px 21px;
+      padding: 0 10px 0 21px;
     }
   }
 
   .price-list__option-value {
-    padding: 10px 2px 0 0;
+    padding: 1px 2px 0 0;
+  }
+
+  .price-list__icon {
+    &--yes {
+      height: 59px;
+      background-position: 50% 22px;
+    }
+
+    &--no {
+      height: 59px;
+    }
   }
 }
