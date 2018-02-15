@@ -32,6 +32,10 @@
   font-size: @font-size-small;
   line-height: @line-height-medium;
   text-align: center;
+
+  &--success {
+    margin-bottom: 32px;
+  }
 }
 
 .modal__wrapper {
@@ -46,4 +50,55 @@
 
 .modal__close {
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 460px;
+  }
+
+  .modal__title {
+    margin: 0 100px;
+    font-size: @font-size-extra-extra-big;
+    line-height: @line-height-extra-giant;
+  }
+
+  .modal__message {
+    margin: 25px 70px 37px;
+    font-size: @font-size-medium;
+
+    &--success {
+      margin-bottom: 30px;
+    }
+  }
+
+  .modal__close {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal {
+    &--success {
+      width: 780px;
+    }
+  }
+
+  .modal__title {
+    &--success {
+      margin: 0 160px;
+    }
+  }
+
+  .modal__message {
+    &--success {
+      margin: 25px 190px 37px;
+    }
+  }
+
+  .modal__close {
+    &--success {
+      width: 460px;
+    }
+  }
 }
