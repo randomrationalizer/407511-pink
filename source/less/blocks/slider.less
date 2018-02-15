@@ -48,3 +48,32 @@
     display: flex;
   }
 }
+
+.slider__arrow {
+  display: block;
+  width: 22px;
+  height: 41px;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
+
+  &--prev {
+    background: url("/img/pic-review-arrow-left.svg") no-repeat 0 0;
+    background-size: 22px auto;
+  }
+
+  &--next {
+    background: url("/img/pic-review-arrow-right.svg") no-repeat 0 0;
+    background-size: 22px auto;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}

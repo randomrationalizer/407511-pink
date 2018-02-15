@@ -10,6 +10,21 @@
   border-collapse: collapse;
   background-color: white;
   transform: translateX(-33.33%);
+
+  &--translate-0 {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+
+  &--translate-33 {
+    transform: translateX(-33.33%);
+    transition: transform 0.3s ease;
+  }
+
+  &--translate-66 {
+    transform: translateX(-66.66%);
+    transition: transform 0.3s ease;
+  }
 }
 
 .price-list__item {
@@ -122,7 +137,47 @@
 }
 
 .price-list__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
   margin: 43px auto 0;
+}
+
+.price-list__toggle {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: @blue-dark;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--active {
+    background-color: white;
+    box-shadow: 0 0 0 3px @blue-dark;
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
 }
 
 @media (min-width: @tablet-width) {
