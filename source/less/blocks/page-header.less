@@ -32,8 +32,6 @@
 }
 
 .page-header__logo-mobile {
-  width: 75px;
-  height: 22px;
   fill: white;
 }
 
@@ -71,12 +69,12 @@
 .navigation--nojs ~ .page-header__logo-wrapper {
   order: 1;
   justify-content: center;
-  padding: 21px @container-padding-mobile 26px;
+  padding: 22px @container-padding-mobile 25px;
 }
 
 .navigation--opened ~ .page-header__logo-wrapper {
   order: -1;
-  padding: 21px @container-padding-mobile 26px;
+  padding: 22px @container-padding-mobile 25px;
 }
 
 .navigation--closed ~ .page-header__logo-wrapper {
@@ -86,11 +84,12 @@
 }
 
 .navigation--nojs ~ .page-header__hamburger {
-  top: 21px;
+  display: none;
 }
 
 .navigation--opened ~ .page-header__hamburger {
-  top: 21px;
+  top: 20px;
+  right: 17px;
 }
 
 .navigation--closed ~ .page-header__hamburger {
