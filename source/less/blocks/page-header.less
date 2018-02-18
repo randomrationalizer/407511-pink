@@ -31,13 +31,11 @@
   width: 100%;
 }
 
-.page-header__logo-mobile {
-  fill: white;
-}
-
-.page-header__logo-tablet,
-.page-header__logo-desktop {
-  display: none;
+.page-header__logo-image {
+  display: block;
+  width: 147px;
+  height: 40px;
+  transform: translate(-72px, -17px);
 }
 
 .page-header__logo {
@@ -47,17 +45,24 @@
 
   &:hover,
   &:focus {
-    .page-header__logo-mobile {
+    .page-header__logo-image path {
       fill: @pink;
     }
   }
 
   &:active {
-    .page-header__logo-mobile {
+    .page-header__logo-image path {
       fill: white;
       opacity: 0.3;
     }
   }
+}
+
+.page-header__logo-glasses,
+.page-header__logo-i-dot,
+.page-header__logo-sparkle,
+.page-header__logo-glasses-sparkling {
+  display: none;
 }
 
 .page-header__hamburger {
@@ -101,34 +106,17 @@
     padding: 27px @container-padding-mobile 43px;
   }
 
-  .page-header__logo-tablet {
-    display: inline;
-    width: 147px;
-    height: 40px;
-  }
-
-  .page-header__logo-mobile,
-  .page-header__logo-desktop {
-    display: none;
-  }
-
   .page-header__logo {
     width: 147px;
     height: 40px;
+  }
 
-    &:hover,
-    &:focus {
-      .page-header__logo-tablet path {
-        fill: @pink;
-      }
-    }
+  .page-header__logo-image {
+    transform: none;
+  }
 
-    &:active {
-      .page-header__logo-tablet {
-        fill: white;
-        opacity: 0.3;
-      }
-    }
+  .page-header__logo-glasses {
+    display: inline-block;
   }
 
   .page-header__inner {
@@ -170,29 +158,14 @@
     background: none;
   }
 
-  .page-header__logo-desktop {
-    display: inline;
+  .page-header__logo-i-dot,
+  .page-header__logo-sparkle,
+  .page-header__logo-glasses-sparkling {
+    display: inline-block;
   }
 
-  .page-header__logo-mobile,
-  .page-header__logo-tablet {
+  .page-header__logo-glasses {
     display: none;
-  }
-
-  .page-header__logo {
-    &:hover,
-    &:focus {
-      .page-header__logo-desktop path {
-        fill: @pink;
-      }
-    }
-
-    &:active {
-      .page-header__logo-desktop {
-        fill: white;
-        opacity: 0.3;
-      }
-    }
   }
 
   .page-header__inner {

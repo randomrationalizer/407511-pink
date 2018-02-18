@@ -14,20 +14,26 @@
   margin: 32px 0 34px;
 }
 
-.page-footer__logo-image:hover .page-footer__logo-text,
-.page-footer__logo-image:focus .page-footer__logo-text {
-  fill: @pink;
+.page-footer__logo-image {
+  &:hover,
+  &:focus {
+    .page-footer__logo-text path {
+      fill: @pink;
+    }
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+
+    .page-footer__logo-text path {
+      fill: @blue-dark;
+    }
+  }
 }
 
-.page-footer__logo-image:active {
-  fill-opacity: 0.3;
-}
-
-.page-footer__logo-image:active .page-footer__logo-text {
-  fill: @blue-dark;
-}
-
-.page-footer__logo-image-desktop {
+.page-footer__logo-i-dot,
+.page-footer__logo-sparkle,
+.page-footer__logo-glasses-sparkling {
   display: none;
 }
 
@@ -71,25 +77,14 @@
     width: 300px;
   }
 
-  .page-footer__logo-image {
+  .page-footer__logo-i-dot,
+  .page-footer__logo-sparkle,
+  .page-footer__logo-glasses-sparkling {
+    display: inline-block;
+  }
+
+  .page-footer__logo-glasses {
     display: none;
-  }
-
-  .page-footer__logo-image-desktop {
-    display: inline;
-  }
-
-  .page-footer__logo-image-desktop:hover .page-footer__logo-text,
-  .page-footer__logo-image-desktop:focus .page-footer__logo-text {
-    fill: @pink;
-  }
-
-  .page-footer__logo-image-desktop:active {
-    fill-opacity: 0.3;
-  }
-
-  .page-footer__logo-image-desktop:active .page-footer__logo-text {
-    fill: @blue-dark;
   }
 
   .page-footer__socials {
