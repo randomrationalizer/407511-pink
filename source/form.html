@@ -17,7 +17,12 @@
     <header class="page-header">
       <nav class="page-header__inner">
         <div class="page-header__wrapper">
-          <ul class="navigation page-header__navigation navigation--opened navigation--nojs">
+          <!--
+            navigation- -nojs - открытое меню при отключенном js
+            navigation- -opened - открытое меню при включенном js
+            navigation- -closed - закрытое меню при включенном js
+              -->
+          <ul class="navigation page-header__navigation navigation--nojs">
             <li class="navigation__item">
               <a class="navigation__link" href="index.html">Главная</a>
             </li>
@@ -32,8 +37,8 @@
             </li>
           </ul>
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo" title="Логотип Pink">
-              <svg class="page-header__logo-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426" height="22.859" viewBox="0 0 74.426 22.859">
+            <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу">
+              <svg class="page-header__logo-mobile" aria-label="Логотип Pink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426" height="22.859" viewBox="0 0 74.426 22.859">
                 <g>
                   <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
                   <path d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -42,7 +47,7 @@
                 </g>
               </svg>
 
-              <svg class="page-header__logo-tablet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
+              <svg class="page-header__logo-tablet" aria-label="Логотип Pink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
                 <g>
                   <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
                   <path fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -53,7 +58,7 @@
                 <path fill="#FFFFFF" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531c4.475,0,8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
               </svg>
 
-              <svg class="page-header__logo-desktop" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
+              <svg class="page-header__logo-desktop" aria-label="Логотип Pink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
                 <g>
                   <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
                   <path fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -119,7 +124,7 @@
           </fieldset>
 
           <fieldset class="contest-form__fieldset contest-form__fieldset--achievements fieldset fieldset--achievements">
-            <legend align="center" class="fieldset__legend fieldset__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="fieldset__legend fieldset__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
             <div class="contest-form__wrapper contest-form__wrapper--achievements">
 
               <ul class="fieldset__field-group fieldset__field-group--achievements">
@@ -152,7 +157,7 @@
           </fieldset>
 
           <fieldset class="contest-form__fieldset contest-form__fieldset--contacts fieldset fieldset--contacts">
-            <legend align="center" class="fieldset__legend fieldset__legend--contacts">Контактная информация</legend>
+            <legend class="fieldset__legend fieldset__legend--contacts">Контактная информация</legend>
             <div class="contest-form__wrapper contest-form__wrapper--contacts">
 
               <ul class="fieldset__field-group fieldset__field-group--contacts">
@@ -169,7 +174,7 @@
           </fieldset>
 
           <fieldset class="contest-form__fieldset contest-form__fieldset--app-platform fieldset fieldset--app-platform">
-            <legend align="center" class="fieldset__legend fieldset__legend--app-platform">С каким приложением путешествовали?</legend>
+            <legend class="fieldset__legend fieldset__legend--app-platform">С каким приложением путешествовали?</legend>
             <div class="contest-form__wrapper contest-form__wrapper--app-platform">
 
               <ul class="fieldset__field-group">
@@ -190,7 +195,7 @@
           </fieldset>
 
           <fieldset class="contest-form__fieldset contest-form__fieldset--message fieldset fieldset--message">
-            <legend align="center" class="fieldset__legend fieldset__legend--textarea">Опишите свои эмоции</legend>
+            <legend class="fieldset__legend fieldset__legend--textarea">Опишите свои эмоции</legend>
             <div class="contest-form__wrapper contest-form__wrapper--message">
 
               <textarea class="fieldset__field input-textarea" id="trip-story" name="trip-story" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -207,7 +212,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <svg class="page-footer__logo-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
+        <svg class="page-footer__logo-image" aria-label="Логотип Pink" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
           <g>
             <path class="page-footer__logo-text" fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
             <path class="page-footer__logo-text" fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -217,7 +222,7 @@
           <path fill="#FFFFFF" d="M60.498,28.266"/>
           <path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
         </svg>
-        <svg class="page-footer__logo-image-desktop" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
+        <svg class="page-footer__logo-image-desktop" aria-label="Логотип Pink" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
           <g>
             <path class="page-footer__logo-text" fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
             <path class="page-footer__logo-text" fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -250,24 +255,21 @@
         <h2 class="visually-hidden">Pink в социальных сетях</h2>
         <ul class="socials__list">
           <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="#">
-              <span class="visually-hidden">Твиттер</span>
+            <a class="socials__link socials__link--twitter" href="#" aria-label="Переход на страницу Pink в Twitter">
               <svg class="socials__icon socials__icon--tw" width="18" height="14">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link social__link--facebook" href="#">
-              <span class="visually-hidden">Facebook</span>
+            <a class="socials__link social__link--facebook" href="#" aria-label="Переход на страницу Pink в Facebook">
               <svg class="socials__icon socials__icon--fb" width="9" height="18">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="#">
-              <span class="visually-hidden">Youtube</span>
+            <a class="socials__link socials__link--youtube" href="#" aria-label="Переход на канал Pink на Youtube">
               <svg class="socials__icon socials__icon--youtube" width="15" height="13">
                 <use xlink:href="#icon-youtube"></use>
               </svg>
@@ -276,9 +278,9 @@
         </ul>
       </section>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__logo" width="27" height="34">
+          <svg class="copyright__logo" width="27" height="34" aria-label="HTML Academy">
             <use xlink:href="#icon-logo-htmlacademy"></use>
           </svg>
         </a>

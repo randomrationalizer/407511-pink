@@ -13,19 +13,25 @@
 
 .editor__controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 198px;
-  margin: 42px 66px 39px 56px;
+  width: 240px;
+  margin: 41px auto 33px;
 }
 
 .editor__filter-icon {
   fill: @blue-dark;
   fill-opacity: 0.3;
+
+  &--fill {
+    margin-top: 2px;
+  }
 }
 
 .editor__filter-button {
+  width: 48px;
+  height: 51px;
   .reset();
   border: none;
   background-color: transparent;
@@ -34,21 +40,6 @@
   &--active .editor__filter-icon {
     fill: @pink;
     fill-opacity: 1;
-  }
-
-  &--crop {
-    width: 44px;
-    height: 44px;
-  }
-
-  &--fill {
-    width: 48px;
-    height: 43px;
-  }
-
-  &--contrast {
-    width: 32px;
-    height: 32px;
   }
 
   &:hover .editor__filter-icon,
@@ -163,7 +154,22 @@
     align-items: center;
     width: 24px;
     margin: 0 28px;
-    padding-bottom: 16px;
+    padding: 8px 0 20px;
+  }
+
+  .editor__filter-button {
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+    cursor: default;
+
+    &--crop {
+      margin-right: 2px;
+    }
+
+    &--contrast {
+      margin-left: 2px;
+    }
   }
 
   .editor__filter-icon {
@@ -171,27 +177,19 @@
     fill-opacity: 1;
 
     &--crop {
-      width: 22px;
-      height: 22px;
+      width: 24px;
+      height: 24px;
+
     }
 
     &--fill {
       width: 24px;
-      height: 22px;
+      height: 24px;
     }
 
     &--contrast {
       width: 16px;
       height: 16px;
-    }
-  }
-
-  .editor__filter-button {
-    cursor: default;
-
-    &:hover .editor__filter-icon,
-    &:focus .editor__filter-icon {
-      fill-opacity: 1;
     }
   }
 
@@ -224,7 +222,7 @@
     }
 
     &--fill {
-      margin: 35px 0 34px 0;
+      margin: 36px 0 34px 0;
 
       .editor__range-toggle {
         left: 25px;
@@ -232,7 +230,7 @@
     }
 
     &--contrast {
-      margin: 34px 0 34px 0;
+      margin: 34px 0 33px 0;
 
       .editor__range-toggle {
         left: 96px;
@@ -267,16 +265,20 @@
   .editor__controls {
     width: 48px;
     margin: 0 44px 0 0;
-    padding-bottom: 18px;
+    padding: 0 0 8px;
   }
 
   .editor__filter-button {
+    width: 48px;
+    height: 48px;
+
     &--crop {
-      align-self: stretch;
+      margin-right: 3px;
+      margin-top: -4px;
     }
 
     &--contrast {
-      margin-right: 4px;
+      margin-left: -3px;
     }
   }
 
@@ -288,7 +290,8 @@
 
     &--fill {
       width: 48px;
-      height: 43px;
+      height: 49px;
+      margin-top: 2px;
     }
 
     &--contrast {

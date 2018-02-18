@@ -3,6 +3,7 @@ var navigation = document.querySelector('.navigation');
 var hamburger = document.querySelector('.hamburger');
 
 navigation.classList.remove('navigation--nojs');
+navigation.classList.add('navigation--closed');
 
 hamburger.addEventListener('click', function() {
   if (navigation.classList.contains('navigation--closed')) {
